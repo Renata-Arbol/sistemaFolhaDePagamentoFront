@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h1 class="text-center">Lista de Funcionários</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Data de Nascimento</th>
+          <th>Documentos</th>
+          <th>Contatos</th>
+          <!-- Outras colunas omitidas para simplificação -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let funcionario of funcionarios">
+          <td>{{ funcionario.id }}</td>
+          <td>{{ funcionario.nome }}</td>
+          <td>{{ funcionario.dataNascimento }}</td>
+    
+          <td>{{ funcionario.contatos }}</td>
+          <td> <button (click)="redirectToEdit(funcionario.id)">Editar</button></td>
+          <!-- Outras colunas omitidas para simplificação -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

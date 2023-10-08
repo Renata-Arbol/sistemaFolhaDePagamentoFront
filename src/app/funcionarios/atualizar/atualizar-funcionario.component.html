@@ -1,0 +1,22 @@
+<form [formGroup]="funcionarioForm">
+  <!-- Campo Funcionario -->
+  <div class="form-group">
+    <label for="funcionario">Funcionário</label>
+    <input type="text" id="funcionario" class="form-control" formControlName="funcionario">
+  </div>
+
+  <!-- Campo Nome -->
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" class="form-control" formControlName="nome">
+  </div>
+
+  <!-- Campo Data de Nascimento -->
+  <div class="form-group">
+    <label for="dataNascimento">Data de Nascimento</label>
+    <input type="date" id="dataNascimento" class="form-control" formControlName="dataNascimento">
+  </div>
+
+  
+  <button class="btn btn-primary" (click)="editarFuncionario(funcionario.id, funcionarioForm.value)">Salvar</button>
+</form>

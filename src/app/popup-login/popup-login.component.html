@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Login</h4>
+    <button type="button" class="close" aria-label="Fechar" (click)="modalService.dismissAll('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <!-- Seu formulário de login aqui -->
+    <form (ngSubmit)="submitLogin()" #loginForm>
+      <!-- Campos de usuário e senha -->
+      <div class="form-group">
+        <label for="username">Usuário</label>
+        <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
+      </div>
+
+      <!-- Botão "Fechar" à esquerda com cor vermelha -->
+      <button type="button" class="btn btn-danger" (click)="modalService.dismissAll('Fechar')">Fechar</button>
+      <!-- Botão "Entrar" à direita com cor verde -->
+      <button type="submit" class="btn btn-success">Entrar</button>
+    </form>
+  </div>

@@ -1,0 +1,70 @@
+/* Estilo para o cabeçalho */
+.navbar {
+    background-color: #1a1a1a; /* Cor de fundo cinza escuro */
+  }
+  
+  .navbar-brand {
+    color: #f0a805; /* Cor laranja para o texto do logotipo */
+    font-weight: bold; /* Texto em negrito para o logotipo */
+  }
+  
+  .nav-link {
+    color: #f0a805; /* Cor laranja para os links no cabeçalho */
+  }
+  
+  .nav-link:hover {
+    color: #fff; /* Cor branca ao passar o mouse sobre os links */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #f0a805; /* Cor laranja para o ícone do botão de alternância */
+  }
+  
+  /* Estilo para o botão de login */
+  .login-button {
+    background-color: #f0a805; /* Cor laranja para o fundo do botão de login */
+    border: none; /* Sem borda no botão */
+    color: #fff; /* Cor branca para o texto do botão de login */
+    font-weight: bold; /* Texto em negrito para o botão de login */
+  }
+  
+  .login-button:hover {
+    background-color: #e59400; /* Cor laranja mais escura ao passar o mouse */
+  }
+  
+  /* Estilo para o botão de logoff */
+  .logoff-button {
+    background-color: #f0a805; /* Cor laranja para o fundo do botão de logoff */
+    border: none; /* Sem borda no botão */
+    color: #fff; /* Cor branca para o texto do botão de logoff */
+    font-weight: bold; /* Texto em negrito para o botão de logoff */
+  }
+  
+  .logoff-button:hover {
+    background-color: #e59400; /* Cor laranja mais escura ao passar o mouse */
+  }
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: #1a1a1a; /* Cor de fundo cinza escuro para o rodapé */
+    color: #fff; /* Cor branca para o texto no rodapé */
+    padding: 10px 0; /* Espaçamento interno no rodapé */
+    text-align: center; /* Texto centralizado no rodapé */
+    width: 100%; /* Largura total do rodapé */
+    position: absolute; /* Posição absoluta para manter no fundo */
+    bottom: 0; /* Fixar no fundo da janela */
+  }
+  /* Dropdown de perfil e configurações */
+.dropdown-menu {
+    background-color: #1a1a1a; /* Cor de fundo cinza escuro */
+  }
+  
+  .dropdown-item {
+    color: #f0a805; /* Cor laranja para o texto dos itens do dropdown */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e59400; /* Cor laranja mais escura ao passar o mouse */
+    color: #fff; /* Cor branca ao passar o mouse sobre os itens do dropdown */
+  }
+  

@@ -1,0 +1,15 @@
+/* Adicione espaço entre os botões */
+.btn-spacing {
+    margin-right: 10px; /* Espaçamento horizontal entre os botões */
+    margin-bottom: 10px; /* Espaçamento vertical entre os botões */
+  }
+  
+  /* Tornar os botões responsivos em telas menores */
+  @media (max-width: 768px) {
+    .btn-spacing {
+      margin-right: 0; /* Remova o espaçamento horizontal em telas menores */
+      margin-bottom: 10px; /* Mantenha o espaçamento vertical em telas menores */
+      display: block; /* Faça os botões ocuparem toda a largura */
+    }
+  }
+  
