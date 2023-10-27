@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PopupLoginComponent } from './popup-login/popup-login.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -15,15 +15,6 @@ export class AppComponent implements  OnInit {
   constructor(private modalService: NgbModal) {}
 
   title = 'folha-de-pagamento';
-
-  openLoginModal() {
-    const modalRef = this.modalService.open(PopupLoginComponent, { centered: true });
-    
-    // Inscreva-se no evento loginStatus após abrir o modal.
-    modalRef.componentInstance.loginStatus.subscribe((status: string) => {
-      this.onLoginStatus(status);
-    });
-  }
 
   onLoginStatus(status: string) {
     if (status === 'Login bem-sucedido') {

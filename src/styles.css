@@ -1,2 +1,136 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Importando estilos de bibliotecas externas */
 @import "~bootstrap/dist/css/bootstrap.css";
+/*-----------------------------LOGIN-----------------------------------------------------------*/
+
+/*-----------------------------LOGIN-----------------------------------------------------------*/
+body {
+    background-color: #3982d6;
+}
+
+img {
+    width: 100px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.div1 {
+    background-color: #559cec;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.matricula, .senha {
+    margin-left: 3.125rem;
+    padding: .625rem;
+    border: 0;
+    border-radius: .25rem;
+    width: 25rem;
+}
+
+.btnentrar {
+    margin-left: 3.125rem;
+    padding: .625rem;
+    border: 0;
+    border-radius: .25rem;
+    cursor: pointer;
+    background-color: #0d53a3;
+    color: white;
+}
+
+.btnentrar:hover {
+    background-color: #0b488f;
+}
+
+.esqueceusenha {
+    margin-left: 12.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/*-----------------------------MENU-----------------------------------------------------------------*/
+.menu {
+    background-color: #559cec;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: white;
+    padding: 1.25rem;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #3982d6;
+}
+
+/*---------------------FOLHA---------------------------------------------------------*/
+.tabela {
+    width: 80%;
+    margin: 1.25rem auto;
+}
+
+.tabela th, .tabela td {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: .75rem;
+}
+
+.tabela th {
+    background-color: #0d53a3;
+    color: white;
+}
+
+/*-----------------------esqueciSenha--------------------------*/
+.btnvoltar {
+    padding: .625rem;
+    border-radius: .25rem;
+    border: 0;
+    cursor: pointer;
+    background-color: #0d53a3;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btnvoltar:hover {
+    background-color: #0b488f;
+}
+
+/* Estilos Personalizados para o Menu */
+.navbar-custom {
+    background-color: #559cec;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    background-color: #3982d6;
+    color: rgb(255, 255, 255);
+}
+html, body {
+    height: 100%; /* Asegura que o fundo azul cubra toda a página */
+}
+
+body {
+    background-color: #3982d6;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}

@@ -12,7 +12,8 @@ export class ListaFuncionariosComponent implements  OnInit {
 
   funcionarios: any[] = [];
 
-  constructor(private funcionariosService: FuncionariosService, private registroPonto: RegistroPontoService, private router: Router) { }
+  constructor(private funcionariosService: FuncionariosService, private registroPonto: RegistroPontoService, private router: Router,
+    ) { }
 
   ngOnInit(): void {
     this.carregarFuncionarios();

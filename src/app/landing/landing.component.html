@@ -1,88 +1,20 @@
-<div class="container mt-5">
-    <!-- Cartões de Login -->
-    <div class="row justify-content-center mt-4">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Fuso Horário de Brásilia</h5>
-            <!-- Relógio -->
-            <div class="row justify-content-center mt-1">
-              <div class="col-md-6 text-center">
-                <canvas id="meuRelogio" width="100" height="100"></canvas>
-              </div>
-            </div>
-            <form (submit)="onSubmit()" class="needs-validation" novalidate>
-              <div class="form-group mt-0 mb-3"> <!-- Remova a margem superior e adicione uma margem inferior -->
-                <label for="username1">Usuário:</label>
-                <input type="text" class="form-control" id="username1" [(ngModel)]="username" name="username1" required>
-                <div class="invalid-feedback">
-                  Campo de usuário é obrigatório.
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="password1">Senha:</label>
-                <input type="password" class="form-control" id="password1" [(ngModel)]="password" name="password1" required>
-                <div class="invalid-feedback">
-                  Campo de senha é obrigatório.
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Os outros cards continuam da mesma forma, com a classe "card" -->
-      <div class="col-md-4">
-        <div class="card mb-4"> <!-- Adicione uma pequena margem inferior -->
-          <div class="card-body">
-            <h5 class="card-title">Login 2</h5>
-            <canvas id="relogio2" width="100" height="100"></canvas>
-            <form (submit)="onSubmit()" class="needs-validation" novalidate>
-              <div class="form-group mt-0 mb-3"> <!-- Remova a margem superior e adicione uma margem inferior -->
-                <label for="username2">Usuário:</label>
-                <input type="text" class="form-control" id="username2" [(ngModel)]="username" name="username2" required>
-                <div class="invalid-feedback">
-                  Campo de usuário é obrigatório.
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="password2">Senha:</label>
-                <input type="password" class="form-control" id="password2" [(ngModel)]="password" name="password2" required>
-                <div class="invalid-feedback">
-                  Campo de senha é obrigatório.
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card mb-4"> <!-- Adicione uma pequena margem inferior -->
-          <div class="card-body">
-            <h5 class="card-title">Login 3</h5>
-            <canvas id="relogio3" width="100" height="100"></canvas>
-            <form (submit)="onSubmit()" class="needs-validation" novalidate>
-              <div class="form-group mt-0 mb-3"> <!-- Remova a margem superior e adicione uma margem inferior -->
-                <label for="username3">Usuário:</label>
-                <input type="text" class="form-control" id="username3" [(ngModel)]="username" name="username3" required>
-                <div class="invalid-feedback">
-                  Campo de usuário é obrigatório.
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="password3">Senha:</label>
-                <input type="password" class="form-control" id="password3" [(ngModel)]="password" name="password3" required>
-                <div class="invalid-feedback">
-                  Campo de senha é obrigatório.
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="div1">
+  <img src="Logo - Árvore da Sorte.fundo transparente.png" alt="">
+  <h1>BEM-VINDO AO SEU PORTAL RH</h1>
+  <br> <br>
+  <form (ngSubmit)="submitLogin()" #loginForm>
+      <input type="text" class="matricula" id="username" [(ngModel)]="username" name="username" placeholder="Digite sua matrícula"  required>
+      <br><br>
+      
+      <input type="password" class="senha" id="password" [(ngModel)]="password" name="password"  required>
+      
+      <br> <br>
+      
+      <button href="#" class="btnentrar">Entrar</button>
+      <!--Aqui vai faltar backend para poder acessar o menu-->
+      
+      
+      
+      <a href="EsqueciSenha.html" class="esqueceusenha">Esqueci minha senha</a>
+  </form>
+</div>

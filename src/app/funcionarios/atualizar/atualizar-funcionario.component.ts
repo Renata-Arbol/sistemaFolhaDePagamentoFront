@@ -54,7 +54,6 @@ export class AtualizarFuncionarioComponent implements  OnInit {
                 data.dataNascimento = data.dataNascimento.split('T')[0];
             }
             this.funcionario = data;
-            console.log(this.funcionario);
             this.funcionarioForm.patchValue(data);
         },
         (error) => {
@@ -72,7 +71,6 @@ export class AtualizarFuncionarioComponent implements  OnInit {
                   data.dataNascimento = data.dataNascimento.split('T')[0];
               }
               this.funcionario = data;
-              console.log(this.funcionario);
               this.funcionarioForm.patchValue(data);
           },
           (error) => {

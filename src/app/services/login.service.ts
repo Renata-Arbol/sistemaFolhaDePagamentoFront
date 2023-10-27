@@ -13,9 +13,6 @@ export class LoginService {
 
   registraPonto(usuario: string, senha: string): Observable<any> {
     const url = `${this.apiURL}/api/login`; // Substitua pela URL da rota de login do seu backend
-    console.log(usuario)
-    console.log(senha)
-
     // Crie um objeto com os dados do usuário e senha
     const body = {
       Usuario: usuario,
